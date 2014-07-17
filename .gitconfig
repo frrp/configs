@@ -1,0 +1,52 @@
+[user]
+	email = frantisek.polach@gmail.com
+	name = franta
+[credential]
+	helper = cache --timeout=50000
+[color]
+  ui = auto
+[color "branch"]
+  current = red
+  local = green
+  remote = blue
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[color]
+  ui = true
+[color "diff"]
+  whitespace = red reverse
+[core]
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  pager = less -FRSX
+  editor = /usr/bin/vim
+[alias]
+  st = status
+  ci = commit
+  a = commit --amend
+  aa = commit -a --amend
+  cia = commit -a
+  cim = commit -m
+  ciam = commit -a -m
+  br = branch
+  ba = branch -a
+  bd = branch -D
+  co = checkout
+  d  = diff
+  dc  = diff --cached
+  lg = log -p --decorate
+  l  = log --oneline
+  log = log
+  wc = whatchanged
+  plr = pull --rebase
+  rc = rebase --continue
+  ri = rebase -i
+[push]
+  default = upstream
+
